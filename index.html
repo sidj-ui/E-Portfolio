@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - John Fabie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">JF Design</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="header">
+    <h1>John Fabie</h1>
+    <p>College student • BSIT Major • Designer</p>
+    
+    <img src="profile.jpg" alt="John Fabie" class="profile-img">
+
+    <div class="welcome-msg">
+      <p>Welcome to My Professional Dashboard. Explore My Journey in Tech and Design.</p>
+    </div>
+
+</header>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I'm a 3rd year BSIT Student, 23 years old. My Hobbies is Reading Manhwa/Manga/Manhua and playing Online Games</p>
+    <p><strong>Objective:</strong> To gain practical experience in web development and design while contributing to creative and interactive projects that improve user experiences.</p>
+    
+    <div class="cvsu-container">
+        <div class="cvsu-box">
+            <h4>CvSU Vision</h4>
+            <p>The premier university in historic Cavite globally recognized for excellence in character development...</p>
+        </div>
+        <div class="cvsu-box">
+            <h4>CvSU Mission</h4>
+            <p>Providing excellent, equitable, and relevant educational opportunities in the arts, sciences, and technology...</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects & Experience</h2>
+    <div class="project-item">
+        <p><strong>Academic Video Editing</strong></p>
+        <p><strong>Social Media Streaming</strong></p>
+        <button id="details-btn">View More Details</button>
+        <div id="project-details" class="hidden">
+            <p>Focused on OBS Studio configurations for high-quality production.</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="resume" class="section">
+    <h2>Resume / CV</h2>
+    <div class="resume-content">
+        <p><strong>Education:</strong> Cavite State University (CvSU)</p>
+        <p>BS Information Technology (Expected 2027)</p>
+        <br>
+        <p><strong>Skills:</strong> HTML, CSS, JavaScript, UI/UX (Canva/Figma)</p>
+    </div>
+    <a class="download-btn" id="cv-download" href="#">Download PDF</a>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-info">
+        <p>Email: johnnino.fabie@cvsu.edu.ph</p>
+        <p>Location: Cavite, Philippines</p>
+    </div>
+    
+    <form id="contact-form">
+        <input type="text" id="full-name" placeholder="Enter your name" required>
+        <input type="email" id="user-email" placeholder="Enter your email" required>
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <footer class="footer">
+    &copy; 2026 John Fabie | DCIT 26 Midterm Project
+  </footer>
+    
+  <script src="script.js"></script>
+</body>
+</html>

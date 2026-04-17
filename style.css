@@ -1,0 +1,85 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0b16;
+  color: #e0e0e0;
+  padding-top: 60px;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: #1c142b;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  position: fixed;
+  top: 0; width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #b56eff;
+}
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a { color: #b56eff; text-decoration: none; font-size: 14px; font-weight: 600; }
+
+.header { text-align: center; padding: 60px 20px; animation: fadeIn 1s ease-out; }
+.header h1 { font-size: 3em; color: #b56eff; }
+
+.profile-placeholder {
+  width: 120px; height: 120px;
+  background: #b56eff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.section {
+  background: #1c142b;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.section h2 { color: #b56eff; margin-bottom: 15px; border-left: 4px solid #b56eff; padding-left: 10px; }
+
+.cvsu-container { display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
+.cvsu-box { flex: 1; background: #2a1e3d; padding: 15px; border-radius: 8px; font-size: 0.85em; }
+
+.hidden { display: none; }
+
+#details-btn, .download-btn, button[type="submit"] {
+  background: #b56eff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+#contact-form { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+#contact-form input { padding: 10px; border-radius: 5px; border: none; background: #2a1e3d; color: white; }
+
+.footer { text-align: center; color: #666; padding: 40px; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover; 
+  border-radius: 50%;
+  border: 3px solid #b56eff;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(181, 110, 255, 0.4);
+}
